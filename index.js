@@ -34,6 +34,8 @@ const totalShards = 8;
 			shards = result["shards"];
 			firstShardID = result["firstShardID"];
 			lastShardID = result["lastShardID"];
+			
+			bot.login(process.env.TOKEN);
 		}
 		// How many clusters we will have
 		var clusters = Math.ceil(shards/totalShards);
